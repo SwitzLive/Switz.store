@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ryan's Webpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+            </script>
+            <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <h1>Welcome to my Webpage</h1> 
+        <body onload="startTime()">
+
+        <div id="txt"></div>
+        
+        </body>
+        <p>
+            Hey, My name is Ryan. I would consisder myself a <strong>Beginner</strong> when it comes to Coding. I'm from South Carolina, but I live in Greorgia. 
+            I've created a Website and a <i>Fully Functioning</i> Discord Bot. Right now it is down for Maintance. I lost all the Code during a Storm and I had no Backups downloaded.
+        </p>
+        <h2>Fun Facts about Me</h2>
+        <ol>
+            <li>I Love Coding</li>
+            <li>I Love Pyton & SQL</li>
+            <li>I Love Gaming and Building PCs</li>
+        </ol>
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Building PCs & Gaming</li>
+	    <li>Programming</li>
+            <li>Penatraction Test (Hacking)</li>
+            <li>Sitting and looking at RGB lights</li>
+        </ul>
+        <p> 
+            My Steam Profile is <a href="https://steamcommunity.com/id/SwitzLive">SwitzLive</a>
+        </p>
+       <div class="section">
+                <h1><span>My Favorite Videos</span></h1>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/Yke9BhP1uks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe height="150" width="300" src="https://www.youtube.com/embed/zEpB4aNHllA" allowfullscreen frameborder="0"></iframe>
+            </div>
+        <div class="section">
+            <h1><span>My Favorite Images</span></h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTErViduKXcN2nVDaq6vD0bD6kku4d3bzM7e-61W_p4UfZq46z0">
+            <img src="dsx5Go5.jpg" height="255" width="200">
+        </div>
+    </body>
+</html>
